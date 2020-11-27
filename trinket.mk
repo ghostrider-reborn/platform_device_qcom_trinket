@@ -325,6 +325,10 @@ CAM_BRINGUP_NEW_SP := true
 #Enable Light AIDL HAL
 PRODUCT_PACKAGES += android.hardware.lights-service.qti
 
+# Target specific Netflix custom property
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.netflix.bsp_rev=Q6125-17995-1
+
 ###################################################################################
 # This is the End of target.mk file.
 # Now, Pickup other split product.mk files:
